@@ -1208,7 +1208,7 @@ do
                     utility:UpdateOffset(esppreview_frame_previewbox, {Vector2.new(10,10), esppreview_inner_frame})
                     utility:UpdateOffset(boxoutline, {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox})
                     --
-                    window:Move(main_frame.Position + Vector2.new(0, 0))\
+                    window:Move(main_frame.Position + Vector2.new(0, 0))
                     
                 end
             end
