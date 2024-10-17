@@ -1071,17 +1071,17 @@ do
                     }
                 }
             }
-            --[[
+            --
             local esppreview_frame = utility:Create("Frame", {Vector2.new(main_frame.Size.X + 5,0), main_frame}, {
                 Size = utility:Size(0, 236, 0, 339),
                 Position = utility:Position(1, 5, 0, 0, main_frame),
                 Color = theme.outline
             }, window.VisualPreview.Drawings)
-            --]]
+            --
             library.colors[esppreview_frame] = {
                 Color = "outline"
             }
-            --[[
+            --
             local esppreview_inline = utility:Create("Frame", {Vector2.new(1,1), esppreview_frame}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_frame),
                 Position = utility:Position(0, 1, 0, 1, esppreview_frame),
@@ -1101,7 +1101,7 @@ do
             library.colors[esppreview_inner] = {
                 Color = "lightcontrast"
             }
-            --[[
+            --
             local esppreview_title = utility:Create("TextLabel", {Vector2.new(4,2), esppreview_inner}, {
                 Text = "ESP Preview",
                 Size = theme.textsize,
@@ -1110,7 +1110,7 @@ do
                 OutlineColor = theme.textborder,
                 Position = utility:Position(0, 4, 0, 2, esppreview_inner)
             }, window.VisualPreview.Drawings)
-            --]]
+            --
             local esppreview_visiblebutton = utility:Create("TextLabel", {Vector2.new(esppreview_inner.Size.X - (5 + 7),2), esppreview_inner}, {
                 Text = "O",
                 Size = theme.textsize,
@@ -1159,7 +1159,7 @@ do
                 Size = utility:Size(1, -20, 1, -20, esppreview_inner_frame),
                 Position = utility:Position(0, 10, 0, 10, esppreview_inner_frame),
                 Color = Color3.fromRGB(0, 0, 0),
-                Transparency = 0
+                Transparency = 1
             })
             --
             local BoxSize = utility:Size(1, -7, 1, -55, esppreview_frame_previewbox)
