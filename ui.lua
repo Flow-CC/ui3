@@ -1017,7 +1017,7 @@ do
                 MaxColor.B + (MinColor.B - MaxColor.B) * Value
             )
         end
-        --[[ // Esp Preview
+        -- // Esp Preview
         do
             window.VisualPreview = {
                 Size = {X = 5, Y = 0},
@@ -1071,17 +1071,17 @@ do
                     }
                 }
             }
-            --]]
+            --[[
             local esppreview_frame = utility:Create("Frame", {Vector2.new(main_frame.Size.X + 5,0), main_frame}, {
                 Size = utility:Size(0, 236, 0, 339),
                 Position = utility:Position(1, 5, 0, 0, main_frame),
                 Color = theme.outline
             }, window.VisualPreview.Drawings)
-            --
+            --]]
             library.colors[esppreview_frame] = {
                 Color = "outline"
             }
-            --
+            --[[
             local esppreview_inline = utility:Create("Frame", {Vector2.new(1,1), esppreview_frame}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_frame),
                 Position = utility:Position(0, 1, 0, 1, esppreview_frame),
