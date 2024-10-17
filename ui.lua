@@ -1192,7 +1192,7 @@ do
             function window.VisualPreview:ValidateSize(Side, Size)
                 if not (window.VisualPreview.Size[Side] == Size) then
                     window.VisualPreview.Size[Side] = Size
-                    --
+                    --[[
                     esppreview_frame.Size = utility:Size(0, 231 + window.VisualPreview.Size[Side], 0, 339)
                     esppreview_inline.Size = utility:Size(1, -2, 1, -2, esppreview_frame)
                     esppreview_inner.Size = utility:Size(1, -2, 1, -2, esppreview_inline)
@@ -1208,7 +1208,8 @@ do
                     utility:UpdateOffset(esppreview_frame_previewbox, {Vector2.new(10,10), esppreview_inner_frame})
                     utility:UpdateOffset(boxoutline, {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox})
                     --
-                    window:Move(main_frame.Position + Vector2.new(0, 0))
+                    window:Move(main_frame.Position + Vector2.new(0, 0))\
+                    --]]
                 end
             end
             --
