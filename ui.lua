@@ -1077,11 +1077,11 @@ do
                 Position = utility:Position(1, 5, 0, 0, main_frame),
                 Color = theme.outline
             }, window.VisualPreview.Drawings)
-            --]]
+            --
             library.colors[esppreview_frame] = {
                 Color = "outline"
             }
-            --[[
+            --
             local esppreview_inline = utility:Create("Frame", {Vector2.new(1,1), esppreview_frame}, {
                 Size = utility:Size(1, -2, 1, -2, esppreview_frame),
                 Position = utility:Position(0, 1, 0, 1, esppreview_frame),
