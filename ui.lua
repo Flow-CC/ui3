@@ -7308,10 +7308,4 @@ do
 end
 --
 
-function toggleVisualPreview()
-    window.VisualPreview.Visible = false
-end
-
-toggleVisualPreview()
-
 return library, utility, library.pointers, theme
