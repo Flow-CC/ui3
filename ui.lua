@@ -1159,7 +1159,7 @@ do
                 Size = utility:Size(1, -20, 1, -20, esppreview_inner_frame),
                 Position = utility:Position(0, 10, 0, 10, esppreview_inner_frame),
                 Color = Color3.fromRGB(0, 0, 0),
-                Transparency = 0
+                Transparency = 1
             })
             --
             local BoxSize = utility:Size(1, -7, 1, -55, esppreview_frame_previewbox)
@@ -1279,7 +1279,7 @@ do
                     esppreview_visiblebutton.Text = window.VisualPreview.Visible and "O" or "0"
                 end
             end
-            --[[
+            --
             do -- Preview Stuff
                 local preview_boxoutline = utility:Create("Frame", {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox}, {
                     Size = BoxSize,
@@ -1345,12 +1345,12 @@ do
                     Size = utility:Size(1, -46, 1, -40, preview_box),
                     Position = utility:Position(0, (46/2), 0, (40/2), preview_box),
                     Color = Color3.fromRGB(255, 255, 255),
-                    Transparency = 0
+                    Transparency = 1
                 }, window.VisualPreview.Drawings)
-                --]]
+                --
                 do -- Chams
                     for Index = 1, 2 do
-                        local transparency = Index == 1 and 0.75 or 0.5
+                        local transparency = Index == 1 and 1 or 1
                         local color = Index == 1 and Color3.fromRGB(93, 62, 152) or Color3.fromRGB(255, 255, 255)
                         --
                         local extrasize = Index == 1 and 4 or 0
@@ -1411,7 +1411,7 @@ do
                     for Index = 1, 2 do
                         local skeletonsize = Vector2.new(Index == 1 and 3 or 1, Index == 1 and -10 or -12)
                         local skeletonoffset = Vector2.new(Index == 1 and -1 or 0, Index == 1 and 5 or 6)
-                        local transparency = 0.5
+                        local transparency = 1
                         local color = Index == 1 and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(255, 255, 255)
                         --
                         local preview_skeleton_head = utility:Create("Frame", {Vector2.new((window.VisualPreview.Components.Chams["Head"][2].Size.X * 0.5) + skeletonoffset.X, (window.VisualPreview.Components.Chams["Head"][2].Size.Y * 0.5) + skeletonoffset.Y), window.VisualPreview.Components.Chams["Head"][2]}, {
@@ -1486,7 +1486,7 @@ do
                     Position = utility:Position(0, 1, 0, 1, preview_boxoutline),
                     Color = Color3.fromRGB(255, 255, 255),
                     Filled = true,
-                    Transparency = 0.9
+                    Transparency = 1
                 }, window.VisualPreview.Drawings)
                 --
                 local preview_flags = utility:Create("TextLabel", {Vector2.new(preview_box.Size.X -56, 5), preview_box}, {
