@@ -1071,7 +1071,7 @@ do
                     }
                 }
             }
-            --[[
+            --
             local esppreview_frame = utility:Create("Frame", {Vector2.new(main_frame.Size.X + 5,0), main_frame}, {
                 Size = utility:Size(0, 236, 0, 339),
                 Position = utility:Position(1, 5, 0, 0, main_frame),
@@ -1101,7 +1101,7 @@ do
             library.colors[esppreview_inner] = {
                 Color = "lightcontrast"
             }
-            --[[
+            --
             local esppreview_title = utility:Create("TextLabel", {Vector2.new(4,2), esppreview_inner}, {
                 Text = "ESP Preview",
                 Size = theme.textsize,
@@ -1110,7 +1110,7 @@ do
                 OutlineColor = theme.textborder,
                 Position = utility:Position(0, 4, 0, 2, esppreview_inner)
             }, window.VisualPreview.Drawings)
-            --]]
+            --
             local esppreview_visiblebutton = utility:Create("TextLabel", {Vector2.new(esppreview_inner.Size.X - (5 + 7),2), esppreview_inner}, {
                 Text = "O",
                 Size = theme.textsize,
@@ -1278,7 +1278,7 @@ do
                     esppreview_visiblebutton.Text = window.VisualPreview.Visible and "O" or "0"
                 end
             end
-            --[[
+            --
             do -- Preview Stuff
                 local preview_boxoutline = utility:Create("Frame", {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox}, {
                     Size = BoxSize,
@@ -1507,7 +1507,7 @@ do
                     Center = false,
                     Position = utility:Position(0, 0, 0, 5, preview_heatlhbar)
                 }, window.VisualPreview.Drawings);healthvalue = preview_healthbarvalue
-                --
+                --[[
                 window.VisualPreview.Components.Title["Text"] = preview_title
                 window.VisualPreview.Components.Distance["Text"] = preview_distance
                 window.VisualPreview.Components.Tool["Text"] = preview_tool
@@ -1518,8 +1518,9 @@ do
                 window.VisualPreview.Components.HealthBar["Outline"] = preview_heatlhbaroutline
                 window.VisualPreview.Components.HealthBar["Box"] = preview_heatlhbar
                 window.VisualPreview.Components.HealthBar["Value"] = preview_healthbarvalue
+		--]]
             end
-			--]]
+			
             --
             do -- New Drawings
                 local NewDrawings = {}
