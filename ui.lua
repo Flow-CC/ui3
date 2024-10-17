@@ -1279,7 +1279,7 @@ do
                     esppreview_visiblebutton.Text = window.VisualPreview.Visible and "O" or "0"
                 end
             end
-            --
+            --[[
             do -- Preview Stuff
                 local preview_boxoutline = utility:Create("Frame", {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox}, {
                     Size = BoxSize,
@@ -1347,7 +1347,7 @@ do
                     Color = Color3.fromRGB(255, 255, 255),
                     Transparency = 0
                 }, window.VisualPreview.Drawings)
-                --
+                --]]
                 do -- Chams
                     for Index = 1, 2 do
                         local transparency = Index == 1 and 0.75 or 0.5
