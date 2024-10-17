@@ -1192,7 +1192,7 @@ do
             function window.VisualPreview:ValidateSize(Side, Size)
                 if not (window.VisualPreview.Size[Side] == Size) then
                     window.VisualPreview.Size[Side] = Size
-                    --[[
+                    
                     esppreview_frame.Size = utility:Size(0, 231 + window.VisualPreview.Size[Side], 0, 339)
                     esppreview_inline.Size = utility:Size(1, -2, 1, -2, esppreview_frame)
                     esppreview_inner.Size = utility:Size(1, -2, 1, -2, esppreview_inline)
@@ -1209,7 +1209,7 @@ do
                     utility:UpdateOffset(boxoutline, {Vector2.new(esppreview_frame_previewbox.Size.X - BoxSize.X - 1, 20), esppreview_frame_previewbox})
                     --
                     window:Move(main_frame.Position + Vector2.new(0, 0))\
-                    --]]
+                    
                 end
             end
             --
@@ -1508,7 +1508,7 @@ do
                     Center = false,
                     Position = utility:Position(0, 0, 0, 5, preview_heatlhbar)
                 }, window.VisualPreview.Drawings);healthvalue = preview_healthbarvalue
-                --[[
+                
                 window.VisualPreview.Components.Title["Text"] = preview_title
                 window.VisualPreview.Components.Distance["Text"] = preview_distance
                 window.VisualPreview.Components.Tool["Text"] = preview_tool
@@ -1519,7 +1519,7 @@ do
                 window.VisualPreview.Components.HealthBar["Outline"] = preview_heatlhbaroutline
                 window.VisualPreview.Components.HealthBar["Box"] = preview_heatlhbar
                 window.VisualPreview.Components.HealthBar["Value"] = preview_healthbarvalue
-		--]]
+		
             end
 			
             --
