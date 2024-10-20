@@ -1804,8 +1804,8 @@ do
                 end
             end)
             --
-            window.cursor["cursor"].Transparency = window.isVisible and 1 or 0
-            window.cursor["cursor_inline"].Transparency = window.isVisible and 1 or 0
+            window.cursor["cursor"].Transparency = window.isVisible and 1 or 1
+            window.cursor["cursor_inline"].Transparency = window.isVisible and 1 or 1
             uis.MouseIconEnabled = not window.isVisible
             --
             window.fading = false
