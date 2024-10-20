@@ -698,7 +698,7 @@ do
             --
             local cursor = utility:Create("Triangle", nil, {
                 Color = theme.cursoroutline,
-                Thickness = 2.5,
+                Thickness = 0,
                 Filled = false,
                 ZIndex = 65,
                 Hidden = true
