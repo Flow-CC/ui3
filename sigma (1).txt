@@ -690,7 +690,7 @@ do
             library.pointers = {}
             library.colors = {}
             --
-            uis.MouseIconEnabled = true
+            uis.MouseIconEnabled = false
         end
         --
         function window:Cursor(info)
