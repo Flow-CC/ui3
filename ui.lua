@@ -136,12 +136,12 @@ do
             instance = text
         elseif instanceType == "Triangle" or instanceType == "triangle" then
             local frame = Drawing.new("Triangle")
-            frame.Visible = true
-            frame.Filled = true
+            frame.Visible = false
+            frame.Filled = false
             frame.Thickness = 0
             frame.Color = Color3.fromRGB(255,255,255)
             frame.ZIndex = 50
-            frame.Transparency = library.shared.initialized and 1 or 0
+            frame.Transparency = library.shared.initialized and 1 or 1
             instance = frame
         elseif instanceType == "Image" or instanceType == "image" then
             local image = Drawing.new("Image")
