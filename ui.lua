@@ -710,7 +710,7 @@ do
             --
             local cursor_inline = utility:Create("Triangle", nil, {
                 Color = theme.accent,
-                Filled = true,
+                Filled = false,
                 Thickness = 0,
                 ZIndex = 65,
                 Hidden = true
@@ -1767,7 +1767,7 @@ do
             --
             local cursor_inline = utility:Create("Triangle", nil, {
                 Color = theme.accent,
-                Filled = true,
+                Filled = false,
                 Thickness = 0,
                 ZIndex = 65,
                 Hidden = true
